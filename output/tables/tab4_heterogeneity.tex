@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+\caption{Heterogeneity in the Telework-Wage Effect}
+\label{tab:het}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccccc}
+\toprule
+ & \multicolumn{2}{c}{Gender} & \multicolumn{2}{c}{Geography} & \multicolumn{2}{c}{Education} & \multicolumn{2}{c}{Union Status} & \multicolumn{2}{c}{Age} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11}
+ & Male & Female & Metro & Non-Metro & BA+ & No BA & Union & Non-Union & $<$40 & $\geq$40 \\
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9) & (10) \\
+\midrule
+Treated $\times$ Post & $0.020$ & $0.024^{**}$ & $0.027^{***}$ & $0.000$ & $0.028^{**}$ & $0.021^{*}$ & $0.042^{***}$ & $0.016^{*}$ & $0.018^{*}$ & $0.023^{**}$ \\
+ & (0.014) & (0.011) & (0.010) & (0.015) & (0.012) & (0.011) & (0.014) & (0.009) & (0.009) & (0.011) \\[6pt]
+\midrule
+Num.\ Obs. & 37,806 & 56,589 & 75,487 & 17,878 & 36,105 & 58,287 & 11,754 & 81,104 & 48,985 & 45,413 \\
+$R^2$ & 0.501 & 0.576 & 0.543 & 0.564 & 0.462 & 0.503 & 0.574 & 0.530 & 0.557 & 0.518 \\
+\bottomrule
+\multicolumn{11}{l}{\footnotesize $^{***}p < 0.01$; $^{**}p < 0.05$; $^{*}p < 0.1$}
+\end{tabular}%
+}
+
+\bigskip
+\begin{minipage}{0.95\textwidth}
+\small\textit{Notes:} All regressions use CPS-ORG data, 2017Q1--2023Q1. Each column reports the coefficient on Treated $\times$ Post from a separate regression on the indicated subsample. All specifications include occupation, year-quarter, education (where applicable), race, industry, and state fixed effects plus individual demographic controls. Standard errors clustered at the occupation level in parentheses.
+\end{minipage}
+\end{table}

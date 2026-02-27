@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\caption{Summary Statistics: Treatment and Control Groups}
+\label{tab:summary}
+\small
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{\textbf{Treatment (Teleworkable)}} & \multicolumn{2}{c}{\textbf{Control (Non-Teleworkable)}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+\textbf{Variable} & Pre-2020 & Post-2020 & Pre-2020 & Post-2020 \\
+\midrule
+Hourly Wage (\$) & 19.99 & 21.03 & 25.45 & 26.16 \\
+Log Hourly Wage & 2.88 & 2.93 & 3.12 & 3.16 \\
+Age & 38.70 & 38.88 & 39.36 & 39.33 \\
+Experience (years) & 18.55 & 18.64 & 19.26 & 19.09 \\
+Female & 0.667 & 0.652 & 0.501 & 0.500 \\
+Married & 0.486 & 0.471 & 0.550 & 0.539 \\
+Has Children & 0.437 & 0.417 & 0.492 & 0.484 \\
+Bachelor's Degree+ & 0.377 & 0.400 & 0.360 & 0.393 \\
+Abstract Task Index & 0.62 & 0.63 & 0.66 & 0.67 \\
+Telework Feasibility & 0.849 & 0.844 & 0.055 & 0.057 \\
+\midrule
+N & 27,531 & 25,240 & 21,714 & 19,913 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.92\textwidth}
+\vspace{0.3cm}
+\small \textit{Notes:} CPS-ORG, 2017Q1--2023Q1. Sample restricted to high-abstract occupations (top tercile of O*NET abstract-task index). Treatment: occupations classified as teleworkable by \citet{dingel2020}. All statistics weighted by CPS earnings weight. Hourly wages in real 2019 dollars (CPI-U-RS adjusted).
+\end{minipage}
+\end{table}

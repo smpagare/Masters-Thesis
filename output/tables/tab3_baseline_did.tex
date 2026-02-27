@@ -1,0 +1,30 @@
+\begin{table}[H]
+\centering
+\caption{Baseline Difference-in-Differences: Effect of Telework Access on Abstract-Task Wages}
+\label{tab:baseline}
+\footnotesize
+\begin{tabular}{lccccccc}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
+\midrule
+Treated $\times$ Post & $0.023^{**}$ & $0.022^{**}$ & $0.020^{**}$ & $0.022^{**}$ & $0.023^{**}$ & $0.022^{**}$ & $0.018^{**}$ \\
+ & (0.010) & (0.009) & (0.009) & (0.009) & (0.009) & (0.009) & (0.009) \\[6pt]
+Occupation FE & X & X & X & X & X & X & X \\
+Year-Quarter FE & X & X & X & X & X & X & X \\
+Demographics &  & X & X & X & X & X & X \\
+Education, Race FE &  &  & X & X & X & X & X \\
+Industry FE &  &  &  & X & X & X &  \\
+State FE &  &  &  &  & X & X & X \\
+Ind $\times$ YQ FE &  &  &  &  &  &  & X \\
+\midrule
+Num.\ Obs. & 94,398 & 94,398 & 94,398 & 94,398 & 94,398 & 94,398 & 94,398 \\
+$R^2$ & 0.392 & 0.443 & 0.489 & 0.501 & 0.541 & 0.529 & 0.544 \\
+\bottomrule
+\multicolumn{8}{l}{\footnotesize $^{***}p < 0.01$; $^{**}p < 0.05$; $^{*}p < 0.1$}
+\end{tabular}
+
+\bigskip
+\begin{minipage}{0.95\textwidth}
+\small\textit{Notes:} All regressions use CPS-ORG data, 2017Q1--2023Q1. Sample restricted to high-abstract occupations (top tercile of O*NET abstract-task index). The dependent variable is log real hourly wages (CPI-U-RS adjusted to 2019 dollars). Standard errors clustered at the occupation level (185 clusters) in parentheses. Column (5) is the preferred specification. Column (6) uses RPP-adjusted wages. Column (7) replaces industry FE with industry $\times$ year-quarter FE to absorb sector-specific pandemic shocks.
+\end{minipage}
+\end{table}

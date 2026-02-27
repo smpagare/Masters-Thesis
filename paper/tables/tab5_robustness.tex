@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+\caption{Robustness Checks}
+\label{tab:robust}
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccccc}
+\toprule
+ & Preferred & Placebo & No 2020 & Top 25\% & Top 40\% & Dbl.\ Clust. & Unwgt. & Ind$\times$YQ & No HC & Prime & High Abs. \\
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9) & (10) & (11) \\
+\midrule
+Treated $\times$ Post & $0.023^{**}$ &  & $0.024^{***}$ & $0.018^{*}$ & $0.025^{***}$ & $0.023^{***}$ & $0.016^{**}$ & $0.018^{**}$ & $0.019^{*}$ & $0.018^{**}$ & $0.028^{**}$ \\
+ & (0.009) &  & (0.009) & (0.010) & (0.008) & (0.008) & (0.008) & (0.009) & (0.010) & (0.009) & (0.013) \\[6pt]
+Placebo $\times$ Post &  & $0.004$ &  &  &  &  &  &  &  &  &  \\
+ &  & (0.008) &  &  &  &  &  &  &  &  &  \\[6pt]
+\midrule
+Num.\ Obs. & 94,398 & 49,245 & 85,269 & 70,136 & 112,561 & 94,398 & 94,398 & 94,398 & 82,373 & 66,521 & 46,972 \\
+$R^2$ & 0.541 & 0.554 & 0.542 & 0.517 & 0.530 & 0.541 & 0.545 & 0.544 & 0.484 & 0.518 & 0.533 \\
+\bottomrule
+\multicolumn{12}{l}{\footnotesize $^{***}p < 0.01$; $^{**}p < 0.05$; $^{*}p < 0.1$}
+\end{tabular}%
+}
+
+\bigskip
+\begin{minipage}{0.95\textwidth}
+\small\textit{Notes:} All regressions use CPS-ORG data. Standard errors clustered at the occupation level in parentheses. Column (1) reproduces the preferred specification from Table~\ref{tab:baseline}. Column (2) uses pre-pandemic data only (2017--2019) with a placebo treatment at 2018Q1. Column (3) excludes 2020Q2--Q4. Columns (4)--(5) use alternative abstract-task thresholds. Column (6) double-clusters by occupation and state. Column (7) is unweighted. Column (8) includes industry $\times$ year-quarter FE. Column (9) excludes healthcare practitioners (SOC major group 29) from the control group. Column (10) restricts to prime-age workers (25--54). Column (11) restricts to occupations above the median abstract-task score within the top tercile.
+\end{minipage}
+\end{table}
